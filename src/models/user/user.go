@@ -61,7 +61,7 @@ func AllUser(w http.ResponseWriter, r *http.Request){
 }
 
 func NewUser(w http.ResponseWriter, r *http.Request){
-	fmt.Fprintf(w, "New user")
+	fmt.Fprintf(w, "New user A")
 }
 
 func DeleteUser(w http.ResponseWriter, r *http.Request){
@@ -70,4 +70,8 @@ func DeleteUser(w http.ResponseWriter, r *http.Request){
 
 func UpdateUser(w http.ResponseWriter, r *http.Request){
 	fmt.Fprintf(w, "Update User")
+}
+
+func Testing(w http.ResponseWriter, r *http.Request) {
+    fmt.Fprintf(w, "Hallo")
 }

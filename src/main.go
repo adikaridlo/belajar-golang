@@ -18,6 +18,7 @@ func handleRequests() {
 	myRouter.HandleFunc("/create-user", users.NewUser).Methods("POST")
 	myRouter.HandleFunc("/users/{id}", users.DeleteUser).Methods("DELETE")
 	myRouter.HandleFunc("/users/{id}", users.UpdateUser).Methods("PUT")
+	myRouter.HandleFunc("/hallo", users.Testing).Methods("PUT")
 	myRouter.HandleFunc("/politik", artikel.Politik).Methods("GET")
 	log.Fatal(http.ListenAndServe(":9999", myRouter))
 }
