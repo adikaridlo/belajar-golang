@@ -22,6 +22,6 @@ func handleRequests() {
 	log.Fatal(http.ListenAndServe(":9999", myRouter))
 }
 func main()  {
-	fmt.Println("Haloo Word")
+	fmt.Println("Starting golang.. .")
 	handleRequests()
 }
